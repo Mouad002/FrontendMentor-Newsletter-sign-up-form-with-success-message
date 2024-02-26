@@ -1,0 +1,299 @@
+/*
+- Dark Slate Grey: hsl(234, 29%, 20%)
+- Charcoal Grey: hsl(235, 18%, 26%)
+- Grey: hsl(231, 7%, 60%)
+- White: hsl(0, 0%, 100%)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    font-size: 0.9rem;
+    font-family: 'Roboto';
+    color: hsl(235, 18%, 26%);
+    background-color: hsl(234, 29%, 20%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: #fff;
+}
+.attribution a {
+    color: hsl(228, 100%, 84%);
+}
+
+.display-none {
+    display: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+}
+
+#card1  {
+    background-color: #fff;
+    /* width: 750px; */
+    max-width: 750px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.card-insider {
+    width: 100%;
+    display: flex;
+}
+
+.img {
+    width: 40%;
+    padding: 0;
+    margin: 0;
+}
+
+.left-side {
+    width: auto;
+    margin: auto 0;
+    padding: 0 60px 0 40px;
+}
+
+.title{
+    font-size: 2.5rem;
+}
+
+.icon {
+    color: hsl(4, 100%, 67%);
+    padding-right: 15px;
+    font-size: 1.2rem;
+}
+
+li {
+    line-height: 2;
+}
+
+.email-address-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.email {
+    margin: 20px 0 8px 0;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+#error-text {
+    color: hsl(4, 100%, 67%);
+    margin: 20px 0 8px 0;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: none;
+}
+
+input {
+    font-size: 0.9rem;
+    padding: 18px;
+    border-radius: 7px;
+    color: hsl(235, 18%, 26%);
+    border: 1px solid hsl(231, 7%, 60%);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-error {
+    border-color: hsl(4, 100%, 67%);
+    color: hsl(4, 100%, 67%);
+    background-color: hsl(4, 100%, 94%);
+}
+
+.input-error::placeholder {
+    color: hsl(4, 100%, 67%);
+}
+
+input:focus {
+    outline: none;
+}
+
+button { 
+    font-size: 0.9rem;
+    padding: 18px;
+    border-radius: 7px;
+    border: none;
+    margin: 20px 0;
+    background-color: hsl(235, 18%, 26%);
+    color: #fff;
+    width: 100%;
+    font-weight: 600;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.text {
+    margin: 20px 0;
+}
+
+button:hover {
+    background: rgb(255,89,154);
+    background: linear-gradient(90deg, rgba(255,89,154,1) 0%, rgb(255, 81, 0) 100%);
+    box-shadow: 0px 10px 20px 1px rgba(255, 0, 0, 0.329);
+}
+
+#img1 {
+    display: block;
+}
+
+#img2 {
+    display: none;
+}
+
+#card2 {
+    background-color: #fff;
+    max-width: 330px;
+    border-radius: 35px;
+    padding: 40px;
+    margin: 10px;
+}
+
+.icon-success {
+    padding-bottom: 20px;
+}
+
+.title2 {
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+.text2 {
+    padding-bottom: 20px;
+}
+
+#button2 {
+    margin-bottom: 0;
+}
+
+@media (max-width:759px) {
+    #card2 {
+        background-color: #fff;
+        margin: 50px auto;
+    }
+
+    .container {
+        height: auto;
+        display: block;
+    }
+
+    .card-insider {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .left-side {
+        padding: 20px;
+    }
+
+    .img {
+        border-radius: 15px;
+        height: 400px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        object-fit: cover;
+    }
+    
+    .icon {
+        color: hsl(4, 100%, 67%);
+        padding-right: 15px;
+        font-size: 1.2rem;
+    }
+
+    li {
+        line-height: 2;
+    }
+
+    .email {
+        margin: 20px 0 8px 0;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+
+    .text {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width:475px) {
+    .attribution {
+        color: #000;
+    }
+    .attribution a{
+        color: #1b0092;
+    }
+    body {
+        background-color: #fff;
+    }
+
+    #card1  {
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    #card2{
+        max-width: 100%;
+        border-radius: 0px;
+        margin: 0;
+    }
+
+    .left-side {
+        padding: 20px;
+    }
+
+    .img {
+        border-radius: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        object-fit: fill;
+        height: auto;
+    }
+
+    #img1 {
+        display: none;
+    }
+
+    #img2 {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
