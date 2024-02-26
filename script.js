@@ -5,6 +5,7 @@ var button2 = document.getElementById('button2');
 var myForm = document.getElementById('my-form');
 var myInput = document.getElementById('my-input');
 var errorText = document.getElementById('error-text');
+var boldEmail = document.getElementById('bold-text');
 var isValid = false;
 
 const validateEmail = (email) => {
@@ -36,6 +37,7 @@ myForm.addEventListener('submit', (e) => {
 button2.addEventListener('click', validate);
 
 function validate() {
+    boldEmail.textContent = myInput.value.trim();
     card1.classList.toggle('display-none');
     card2.classList.toggle('display-none');
 }
